@@ -101,7 +101,7 @@ flowchart TD
 
 🗾 Enter Japan
 Select Custom -> Summary + Etiquette
-Click Generate
+Click Generate    
 ✨ View greeting customs, bowing etiquette, communication style, gift-giving traditions, links, and chat with a Japanese persona.
 
 
