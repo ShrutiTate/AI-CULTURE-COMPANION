@@ -1,4 +1,4 @@
-from crewai import Agent, Crew, Task
+from crewai import Agent, Crew
 
 # Define CrewAI agents for each function
 summary_agent = Agent(
