@@ -1,91 +1,44 @@
-## AI Culture Companion
+# 🌍 AI Culture Companion
 
-### Overview
-AI Culture Companion is a Streamlit web app that provides instant, actionable cultural briefings for any country or culture. It helps users learn etiquette, communication styles, social norms, and must-know tips—ideal for travelers, professionals, and anyone working cross-culturally.
-
----
-
-### Features
-- Generate cultural summaries using AI (Google Gemini API)
-- Custom verbosity and section selection (Summary, Etiquette, Communication Style)
-- Dynamic, place-specific resource links (Google Custom Search API)
-- Personalized recommendations and common mistakes
-- Persona chat for interactive Q&A
-- Save notes and export content as PDF or text
-- Clean, modern, and aesthetic UI
+An AI-powered Streamlit application that delivers **instant, actionable cultural briefings** for any country or region. Learn etiquette, communication styles, social norms, and cultural do’s & don’ts—perfect for **travelers, professionals, students, and global teams.**
 
 ---
 
-### Technical Stack
-- **Frontend/UI:** Streamlit, custom CSS
-- **Backend/Logic:** Google Gemini API, Google Custom Search API
-- **Python Modules:**
-	- `app.py` (main UI and logic)
-	- `crew_wrapper.py` (agent orchestration, resource fetching)
-	- `agents.py` (summary, chat, recommendations logic)
-	- `utils.py` (environment loading, API helpers)
-- **Export:** ReportLab for PDF generation
-- **Environment:** `.env` file for API keys and configuration
+## 🚀 Features
+
+✨ **AI-Powered Cultural Insights**  
+Generate cultural summaries using Google Gemini API with personalized depth and verbosity.
+
+🗂️ **Customizable Section Selection**  
+Choose what to view — Summary, Etiquette, Communication Style, Recommendations, and more.
+
+🔍 **Dynamic Resource Links**  
+Fetch real and recent articles, guides, and travel content using Google Custom Search API.
+
+🤖 **Persona Chat**  
+Chat interactively with an AI that behaves like a local expert from that culture.
+
+📝 **Save Notes & Export**  
+Save generated summaries, chat responses, and export as **PDF or text**.
+
+🎨 **Modern, Aesthetic UI**  
+Clean, minimal, and user-friendly interface built with Streamlit and custom CSS.
 
 ---
 
-### Setup & Installation
-1. Clone the repository and navigate to the project folder.
-2. Install dependencies:
-	 ```
-	 pip install -r requirements.txt
-	 ```
-3. Add your API keys to a `.env` file:
-	 - `GOOGLE_GEMINI_API_KEY=...`
-	 - `GOOGLE_CSE_ID=...`
-	 - `GOOGLE_API_KEY=...`
-4. Start the app:
-	 ```
-	 streamlit run app.py
-	 ```
+## 🏗️ Tech Stack
+
+| Category | Technologies |
+|----------|--------------|
+| Frontend/UI | Streamlit, Custom CSS |
+| AI & NLP | Google Gemini API |
+| Search & Resources | Google Custom Search API |
+| PDF Export | ReportLab |
+| Language | Python |
+| Environment Management | `.env` file, dotenv |
+| Architecture | Modular (Agents, UI, Utils, Orchestration) |
 
 ---
 
-### Usage
-1. Use the sidebar to enter a culture/country and select verbosity.
-2. Click "Generate Summary" to view cultural briefings.
-3. Explore etiquette, communication style, recommendations, and resources.
-4. Chat with a local persona in the Persona Chat tab.
-5. Save and download notes in the Your Notes tab.
-6. Export summaries and chats as PDF or text files.
+## 📁 Project Structure
 
----
-
-### Architecture & Flow
-- **Summary Generation:**
-	- User input triggers Gemini API via `agents.py`.
-	- Prompt built based on verbosity and sections.
-	- Response parsed and displayed in UI.
-- **Resource Links:**
-	- Google Custom Search API fetches relevant resources.
-- **Recommendations:**
-	- AI generates tips and common mistakes.
-- **Persona Chat:**
-	- Simulates local expert responses.
-- **Export:**
-	- PDF (ReportLab) and TXT downloads.
-
----
-
-### Extensibility
-- Modular codebase for easy feature addition and maintenance.
-
----
-
-### Demo Scenario
-1. Enter "Japan" in the sidebar.
-2. Select "custom" verbosity and choose "Summary" and "Etiquette".
-3. Click "Generate Summary".
-4. Review the summary, etiquette tips, recommendations, and resources.
-5. Chat with a "Japanese local" in the Persona Chat tab.
-6. Save and download notes.
-
----
-
-### License
-MIT License
