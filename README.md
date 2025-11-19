@@ -67,33 +67,35 @@ pip install -r requirements.txt
 ```
 3️⃣ Create .env file
 Add your API keys:
-GOOGLE_GEMINI_API_KEY=your_gemini_key_here
-GOOGLE_CSE_ID=your_custom_search_engine_id
-GOOGLE_API_KEY=your_google_api_key
+GOOGLE_GEMINI_API_KEY=your_gemini_key_here    
+GOOGLE_CSE_ID=your_custom_search_engine_id    
+GOOGLE_API_KEY=your_google_api_key    
 
 4️⃣ Start the App
+```
 streamlit run app.py
-
+```
 
 💡 How It Works
 flowchart TD
-    A[User Input Country] --> B[Prompt Builder]
-    B --> C[Google Gemini API]
-    C --> D[Generate Cultural Summary]
-    D --> E[Streamlit UI Display]
-    G[Google Custom Search API] --> E
-    E --> F[PDF / Text Export]
-    E --> H[Persona Chat Module]
+    A[User Input Country] --> B[Prompt Builder]    
+    B --> C[Google Gemini API]    
+    C --> D[Generate Cultural Summary]    
+    D --> E[Streamlit UI Display]    
+    G[Google Custom Search API] --> E    
+    E --> F[PDF / Text Export]    
+    E --> H[Persona Chat Module]    
+        
 
 
 🧭 Usage Guide
-✔ Enter any country or culture
-✔ Choose verbosity (Short, Medium, Detailed, Custom)
-✔ Select sections (Summary, Etiquette, Communication Style, Tips, Resources…)
-✔ Click Generate Summary
-✔ Explore local insights, mistakes, recommendations
-✔ Start a chat with a local persona
-✔ Save, export, or share as PDF/TXT
+✔ Enter any country or culture    
+✔ Choose verbosity (Short, Medium, Detailed, Custom)    
+✔ Select sections (Summary, Etiquette, Communication Style, Tips, Resources…)    
+✔ Click Generate Summary    
+✔ Explore local insights, mistakes, recommendations    
+✔ Start a chat with a local persona    
+✔ Save, export, or share as PDF/TXT    
 
 🎯 Demo Scenario Example
 
@@ -104,11 +106,11 @@ Click Generate
 
 
 🔧 Extensibility Ideas
-🔹 Voice-based input using Speech-to-Text
-🔹 Live translation using Google Translate API
-🔹 Cultural comparisons (e.g., India vs Japan)
-🔹 Travel itinerary assistance
-🔹 Multilingual interface support
+🔹 Voice-based input using Speech-to-Text    
+🔹 Live translation using Google Translate API    
+🔹 Cultural comparisons (e.g., India vs Japan)    
+🔹 Travel itinerary assistance    
+🔹 Multilingual interface support    
 
 🤝 Contributing
 Contributions are welcome!
