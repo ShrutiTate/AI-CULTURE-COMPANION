@@ -42,15 +42,15 @@ Clean, minimal, and user-friendly interface built with Streamlit and custom CSS.
 
 ## 📁 Project Structure
 
-ai-culture-companion/
-│── app.py # Main UI and Streamlit logic
-│── agents.py # AI response generation logic
-│── crew_wrapper.py # Agent orchestration & API communication
-│── utils.py # Helpers: API loading, formatting
-│── requirements.txt # Dependencies
-│── .env # API keys (ignored in Git)
-│── .gitignore # Ignored environments & sensitive files
-│── README.md # Project documentation
+ai-culture-companion/    
+│── app.py # Main UI and Streamlit logic    
+│── agents.py # AI response generation logic       
+│── crew_wrapper.py # Agent orchestration & API communication       
+│── utils.py # Helpers: API loading, formatting    
+│── requirements.txt # Dependencies    
+│── .env # API keys (ignored in Git)    
+│── .gitignore # Ignored environments & sensitive files    
+│── README.md # Project documentation    
 
 ---
 
@@ -76,8 +76,8 @@ GOOGLE_API_KEY=your_google_api_key
 streamlit run app.py
 ```
 
-💡 How It Works
-flowchart TD
+💡 How It Works    
+flowchart TD    
     A[User Input Country] --> B[Prompt Builder]    
     B --> C[Google Gemini API]    
     C --> D[Generate Cultural Summary]    
@@ -88,7 +88,7 @@ flowchart TD
         
 
 
-🧭 Usage Guide
+🧭 Usage Guide    
 ✔ Enter any country or culture    
 ✔ Choose verbosity (Short, Medium, Detailed, Custom)    
 ✔ Select sections (Summary, Etiquette, Communication Style, Tips, Resources…)    
@@ -97,7 +97,7 @@ flowchart TD
 ✔ Start a chat with a local persona    
 ✔ Save, export, or share as PDF/TXT    
 
-🎯 Demo Scenario Example
+🎯 Demo Scenario Example    
 
 🗾 Enter Japan
 Select Custom -> Summary + Etiquette
@@ -105,7 +105,7 @@ Click Generate
 ✨ View greeting customs, bowing etiquette, communication style, gift-giving traditions, links, and chat with a Japanese persona.
 
 
-🔧 Extensibility Ideas
+🔧 Extensibility Ideas    
 🔹 Voice-based input using Speech-to-Text    
 🔹 Live translation using Google Translate API    
 🔹 Cultural comparisons (e.g., India vs Japan)    
