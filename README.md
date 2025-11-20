@@ -126,11 +126,3 @@ If you like this project, please consider giving it a ⭐ star on GitHub!
 
 ---
 
-Let me know if you want:
-
-🎨 A GitHub banner/header image  
-🚀 Deployment to Streamlit Cloud / HuggingFace  
-📄 Add badges (API used, license, built with)  
-🛠️ Add CONTRIBUTING.md or LICENSE file  
-
-🚀 Ready to paste!
